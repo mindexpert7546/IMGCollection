@@ -10,11 +10,11 @@ import { TcnewsapiService } from '../service/tcnewsapi.service';
 export class TopheadlinesComponent implements OnInit {
   constructor(private api:TcnewsapiService){ }
 
-  allNews:any = [];
+  allImages:any = [];
   ngOnInit(): void {
       this.api.tcheadline().subscribe(result=>{
-        //console.log(result);
-        this.allNews=result.articles;
+        console.log(result);
+        this.allImages=result;
       })
   }
 

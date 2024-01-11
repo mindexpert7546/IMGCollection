@@ -10,7 +10,7 @@ export class TcnewsapiService {
   constructor(private _http:HttpClient) { }
 
   //api url 
-  apiurl = 'https://newsapi.org/v2/top-headlines?country=in&apiKey=4caf0e183f0b44fa92b52afd5d633608'
+  apiurl = 'https://picsum.photos/v2/list'
 
   tcheadline():Observable<any>{
     return this._http.get(this.apiurl);
